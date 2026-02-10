@@ -1,18 +1,18 @@
 from math import pi, cos, sin, acos 
 
-r = Radius_of_Sphere = 6371 
+r = Radius_of_Sphere = 6371
 
-Starting_Point1 = float(input("Enter Latitude Start Point: "))
-Starting_Point2 = float(input("Enter Longitude Start Point: "))
-Ending_Point1 = float(input("Enter Latitude End Point: "))
-Ending_Point2 =  float(input("Enter Longitude Point: "))
+Starting_Lat = float(input("Enter Latitude Start Point: "))
+Starting_Long= float(input("Enter Longitude Start Point: "))
+Ending_Lat = float(input("Enter Latitude End Point: "))
+Ending_Long =  float(input("Enter Longitude Point: "))
 
-x1 = Starting_Point1 * pi / 180
-x2 = Starting_Point2 * pi / 180
-y1 = Ending_Point1 * pi / 180
-y2 = Ending_Point2 * pi / 180
+Lat1 = Starting_Lat * pi / 180
+Long1= Starting_Long * pi / 180
+Lat2 = Ending_Lat * pi / 180
+Long2 = Ending_Long * pi / 180
 
-d = r * acos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1 - y2))
+d = r * acos(sin(Lat1) * sin(Lat2) + cos(Lat1) * cos(Lat2) * cos(Long1 - Long2))
 d = round(d, 2)
 
 print("The Great Circle Distance is:", d)
