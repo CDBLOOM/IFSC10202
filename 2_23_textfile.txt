@@ -1,0 +1,6 @@
+Assume we have the following file:
+
+Hello! 
+Welcome to demofile.txt
+This file is for testing purposes.
+Good Luck!
